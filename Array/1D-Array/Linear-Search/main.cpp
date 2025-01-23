@@ -1,5 +1,5 @@
 
-// Linear Searching-------------------------------------------
+// Linear Searching----------------------------------->>>>>
 
 #include <iostream>
 using namespace std;
@@ -62,6 +62,6 @@ int main()
     {
         cout << "Element Not found" << endl;
     }
-
+    
     return 0;
 }
