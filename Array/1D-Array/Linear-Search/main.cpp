@@ -97,12 +97,7 @@ void Flips(int arr[], int size){
     }
 }
 
-
-
-
 int main(){
-
-  
 
     int size;
     cout<<"Enter the size of an array: "<<endl;
@@ -127,11 +122,10 @@ int main(){
     }else{
         cout<<"Element Not found"<<endl;
     }
-
-
+    
     int Max = findMax_Element(arr,size);
     cout<<Max;
-
+    
     count(arr,size);
     ExtremePrinting(arr, size);
     ReverseArray(arr,size);
@@ -140,6 +134,5 @@ int main(){
     {
         cout<<arr[i]<<" ";
     }
-    
     return 0;
 }
