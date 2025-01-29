@@ -97,42 +97,4 @@ void Flips(int arr[], int size){
     }
 }
 
-int main(){
 
-    int size;
-    cout<<"Enter the size of an array: "<<endl;
-    cin>>size;
-
-    int arr[100];
-    cout<<"Enter The element of an array: "<<endl;
-    for(int i=0 ; i<size ; i++){
-        cin>>arr[i];
-    }
-
-    int target_Element;
-    cout<<"Enter the target element: "<<endl;
-    cin>>target_Element;
-
-    bool final_ans = targetElement(arr,size,target_Element);
-    cout<<final_ans;
-
-    int final_index = index_of_targetElement(arr, size , target_Element);
-    if(final_index != -1){
-        cout<<"Element Found at:  "<<final_index;
-    }else{
-        cout<<"Element Not found"<<endl;
-    }
-    
-    int Max = findMax_Element(arr,size);
-    cout<<Max;
-    
-    count(arr,size);
-    ExtremePrinting(arr, size);
-    ReverseArray(arr,size);
-    Flips(arr, size);
-    for (int i = 0; i <size; i++)
-    {
-        cout<<arr[i]<<" ";
-    }
-    return 0;
-}
