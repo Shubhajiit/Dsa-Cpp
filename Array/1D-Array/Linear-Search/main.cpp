@@ -96,5 +96,96 @@ void Flips(int arr[], int size){
         }
     }
 }
+// Print ALL pairs ------------
+void printAllpair(int arr[], int size){
+    for(int i=0 ; i<size ; i++){
+        for(int j=0 ; j<size ; j++){
+            cout<<arr[i]<<" , "<<arr[j]<<endl;
+        }
+    }
+}
 
+// Two Sum == Target Element-----------
+int TwoSum(int arr[], int size, int target){
+    int ans = -1;
+    for(int i=0 ; i<size; i++){
+        for(int j=0 ; j<size ; j++){
+            if(arr[i]+arr[j]==target){
+                ans =1;
+            }
+        }
+    }
+    return ans;
+}
+
+// Triplet count of an Array-------
+void total_triplet_count(int arr[], int size){
+    // to count how much triplet are there
+    int count=0;
+    for(int i=0 ; i< size ; i++){
+        for(int j=0 ; j<size ; j++){
+            for(int k =0; k<size; k++){
+                cout<<arr[i]<<", "<<arr[j]<<" ,"<<arr[k]<<endl;
+                count++;
+            }
+        }
+    }
+
+    cout<<"Total Triplet count : "<<count<<endl;
+}
+
+
+
+
+int main(){
+
+    int size;
+    cout<<"Enter the size of an array: "<<endl;
+    cin>>size;
+
+    int arr[100];
+    cout<<"Enter The element of an array: "<<endl;
+    for(int i=0 ; i<size ; i++){
+        cin>>arr[i];
+    }
+
+    int target_Element;
+    cout<<"Enter the target element: "<<endl;
+    cin>>target_Element;
+
+    bool final_ans = targetElement(arr,size,target_Element);
+    cout<<final_ans;
+
+    int final_index = index_of_targetElement(arr, size , target_Element);
+    if(final_index != -1){
+        cout<<"Element Found at:  "<<final_index;
+    }else{
+        cout<<"Element Not found"<<endl;
+    }
+
+
+    int Max = findMax_Element(arr,size);
+    cout<<Max;
+
+    count(arr,size);
+    ExtremePrinting(arr, size);
+    ReverseArray(arr,size);
+    Flips(arr, size);
+    for (int i = 0; i <size; i++)
+    {
+        cout<<arr[i]<<" ";
+    }
+
+    int arr[] = {10,20,30,5};
+    int size = 4;
+
+    total_triplet_count(arr, size);
+
+    int ans = TwoSum(arr, size , 35);
+    cout<<ans;
+    
+    printAllpair(arr,size);
+    
+    return 0;
+}
 
