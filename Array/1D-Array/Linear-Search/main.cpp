@@ -105,7 +105,7 @@ void printAllpair(int arr[], int size){
     }
 }
 
-// Two Sum == Target Element-----------
+// Two Sum == Target Element----------- Your can do it by Two pointer teqnices. for better Time and Space Complexity 
 int TwoSum(int arr[], int size, int target){
     int ans = -1;
     for(int i=0 ; i<size; i++){
